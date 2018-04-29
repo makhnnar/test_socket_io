@@ -1,0 +1,88 @@
+{
+	"user":{
+		"_id":"59833430993b900404aa38b0",
+		"email":"carlos@jpcapps.com",
+		"name":"User 3",
+		"provider":"111468481863860027060",
+		"isAvatar":true,
+		"id_push":"06a9747c-1ae0-4ac9-bc77-0cb6b551b429",
+		"isMosaic":true,
+		"status":"offline",
+		"canEditEmail":true,
+		"device":"android",
+		"vip":true,
+		"lastSession":"2017-09-06T18:14:20.084Z",
+		"id_quickblox":"15196035",
+		"geospatialLocation":{
+			"type":"Point",
+			"coordinates":[-62.7361085,8.2942416]
+		},
+		"randomSort":{
+			"time":1504721671,
+			"sortBy":{"createdAt":1}
+		},
+		"adsFree":false,
+		"photo":"https:\/\/lollipop-images-bucket.s3.amazonaws.com\/c7a613763e74f99f459beae72e14a1c9.jpg","birthdate":"1999-08-03",
+		"height":177,
+		"weight":69,
+		"gender":"male",
+		"desiredGender":"male",
+		"vipTransaction":{
+			"data":{
+				"orderId":"GPA.3395-1709-1315-15142",
+				"packageName":"com.meetwo.videochat",
+				"productId":"vip1month",
+				"purchaseTime":1502392601474,
+				"purchaseState":0,
+				"developerPayload":"subs:vip1month",
+				"purchaseToken":"ohbkjgdjldblemladjmdpbaj.AO-J1OydYelYbr20jMPxB1643m6FHbiRtorDC9P_Fy3PKcljeqmouKCkqRCWDCR9K1zhuZsrcnM1ct03cmOdZtQHIxEypNORtyiYjWwOJfnG1PQLa15Hw9E",
+				"autoRenewing":true
+			},
+			"signature":"eqRjUd02+YntmbfoNRCCNMj9EkLdnQ9BlioPuROnyR0rWlFkjgLV+tRhSjoi1m2kNLc1uda8yqQ7hYvEYsc74qE42mP8R5t1IxZA9GzmIfkwBGSla93MS4GH7jFpfd5SRS98KdsUzqrzJ+FGlnHyY3rLld5qBLjsenedOIeAhEyo\/6qer84VmzEPIZgC\/p3weT5a0uNhIeZpKAW\/lykasYEyxznVlXXroUsfnU+UKSzUt71WvD99pLM8lXOCF\/0zNuLVP3oYezKMxkQ+Z+gWfGFkWN5iWAD0LL19dE1KAbcopq9TQcXGa5Zz\/UpkehFdoCny\/jA7E3n\/J+FR91IEDg==",
+			"checked":true
+		}
+	},
+	"session_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OTgzMzQzMDk5M2I5MDA0MDRhYTM4YjAiLCJpYXQiOjE1MDQ3MjIxODQsImV4cCI6MTUwNjQ1MDE4NH0.jpBDkF6i1keQkv2H5O0UpSSNaMELLq1lUQpc89biEuo",
+	"credits":900
+}
+
+
+FRIENDLIST ---> 
+{
+	"moreResults":false,
+	"friends":[{
+		"_id":"599b1b56759dd46c29376669",
+		"friend":{
+			"_id":"598c6aef1d6317364b5aad09",
+			"provider":"105349529880438391922",
+			"status":"offline",
+			"id_push":null,
+			"photo":"https:\/\/lh3.googleusercontent.com\/-r7DgfLMTy2U\/AAAAAAAAAAI\/AAAAAAAAAAA\/AMp5VUqgFF-E_utbXgUDFhpLS3_p06gbQw\/s96-c\/photo.jpg",
+			"name":"Adolfo Hitler",
+			"vip":false
+		}
+	},
+	{
+		"_id":"59a03821759dd46c293766ff",
+		"friend":{
+			"_id":"598dc525ed4111367c1ca7d3",
+			"provider":"102228373755647",
+			"status":"offline",
+			"id_push":null,
+			"photo":"https:\/\/graph.facebook.com\/v2.8\/102228373755647\/picture?type=normal&width=300&height=300",
+			"name":"Pedro Gómez Hkk",
+			"vip":false
+		}
+	},{
+		"_id":"59b14296759dd46c29376df1",
+		"friend":{
+			"_id":"5989e0200c62445404fb4fe3",
+			"provider":"1884247991864578",
+			"status":"offline",
+			"id_push":"3ccf7db5-fd9f-41e4-a87a-966080d1405f",
+			"photo":"https:\/\/lollipop-images-bucket.s3.amazonaws.com\/09554279fcda8ebf22c7a4a91be2fea7.jpg",
+			"name":"José Pérez Colmenares",
+			"vip":false
+		}
+	}]
+}

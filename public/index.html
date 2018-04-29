@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Socket IO</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	
+	<link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  	<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+	<script type="text/javascript" src="/js/socket.io.js"></script>
+	<script type="text/javascript" src="/js/jquery2.1.1.min.js"></script>
+	<script type="text/javascript" src="/js/materialize.min.js"></script>
+
+
+</head>
+<body>
+
+	<script type="text/javascript" src="/js/msg.js"></script>
+	<style type="text/css">
+		#output{
+			height: 400px;
+			width: 90%;
+			padding: 15px;
+			margin: 15px;
+			background: white;
+			overflow-y: auto;
+			border: 1px solid #999999;
+		}
+		body{
+			background-color:#BBDEFB ;
+		}
+	</style>
+
+	<div id="tabs_container" class="row">
+      	<ul class="tabs">
+        	<li class="tab col s1">
+        		<a id="pestana" val="1" href="#test1">Room 1</a>
+        	</li>
+        	<li class="tab col s1">
+        		<a id="pestana" val="2" href="#test2">Room 2</a>
+        	</li>
+        	<li class="tab col s1">
+        		<a id="pestana" val="3" href="#test3">Room 3</a>
+        	</li>
+        	<li class="tab col s1">
+        		<a id="pestana" val="4" href="#test4">Room 4</a>
+        	</li>
+        	<li class="tab col s1">
+        		<a id="pestana" val="5" href="#test5">Room 5</a>
+        	</li>
+        	<li class="tab col s1">
+        		<a id="pestana" val="6" href="#test6">Room 6</a>
+        	</li>
+        	<li class="tab col s1">
+        		<a id="pestana" val="7" href="#test7">Room 7</a>
+        	</li>
+        	<li class="tab col s1">
+        		<a id="pestana" val="8" href="#test8">Room 8</a>
+        	</li>
+        	<li class="tab col s1">
+        		<a id="pestana" val="9" href="#test9">Room 9</a>
+        	</li>
+      	</ul>
+	</div>
+
+	<div id="game_chat" class="row">
+		
+		<div id="window_chat" class="row">
+			
+			<div id="output">
+					
+			</div>
+			
+			<div class="input-field col s4">
+				<input id="input_nick" type="text" placeholder="Your Nickname">
+			</div>
+
+			<div class="input-field col s4">
+				<input id="input_msg" type="text" placeholder="Your Message here">
+			</div>
+				
+			<div class="input-field col s2">
+				<div class="center-align">
+					<a id="send_msg" class="waves-effect waves-light blue darken-1 btn black-text text-darken-2">
+                        Send
+                   	</a>	
+				</div>	
+			</div>
+
+			<div class="input-field col s2">
+				<div class="center-align">
+					<a id="send_msg_room" class="waves-effect waves-light blue darken-1 btn black-text text-darken-2">
+                        Send Room
+                   	</a>	
+				</div>	
+			</div>
+
+		</div> 
+	</div>
+</body>
+</html>
