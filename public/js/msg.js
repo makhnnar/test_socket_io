@@ -28,6 +28,13 @@ socket.on('directo', function(data){
     console.log("ID_USUARIO: "+data);
 });
 
+socket.on('friend_list', function(data){
+	for(var i=0;i<data.length;i++){
+		$('#output').html($('#output').html()+'<p><strong>Pos: '+i+'  --->  '+JSON.stringify(data[i])+'</strong></p>').show();
+    	console.log("ID_USUARIO: "+data[i]);
+	}
+});
+
 //var output = $('#output');
 //crear una variable que mantenga mel cuarto anterior para hacer el swithc del cuarto y hacer el cambio en el server
 $(function(){

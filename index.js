@@ -16,6 +16,76 @@ app.use(express.static('public'));
 
 var io = socket(server);
 
+const amigos = [
+    {
+   id: 1,
+nombre:  "Pedro",
+estado: "masturbandome",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+},
+{
+id: 2,
+nombre: "Orlan",
+estado: "programando",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+},
+{
+id: 3,
+nombre: "Jose",
+estado: "Mintiendo",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+},
+{
+id: 4,
+nombre: "Juan",
+estado: "Ladillado",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+},
+{
+id: 4,
+nombre: "Simon",
+estado: "El gran varon",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+},
+{
+id: 5,
+nombre: "Alejo",
+estado: "Che Valentinaaaaa",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+},
+{
+id: 6,
+nombre:  "Valentina",
+estado: "Cocinando",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+},
+{
+id: 7,
+nombre: "Alberto",
+estado: "En Brasil",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+},
+{
+id: 8,
+nombre: "Junior",
+estado: "Hola",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+},
+{
+id: 9,
+nombre: "Carlos",
+estado: "Holaaaaaa",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+},
+{
+id: 10,
+nombre: "Chichi",
+estado: "Chao",
+foto: "https://randomuser.me/api/portraits/thumb/men/65.jpg",
+    },
+
+];
+
 io.on('connection',function(socket){
 
     console.log('DATA: '+socket.id);
@@ -23,6 +93,8 @@ io.on('connection',function(socket){
 	console.log('Made socket connection');
 
     _ios.sendPmMsg(io,socket.id,'directo',socket.id);
+
+    _ios.sendPmMsg(io,socket.id,'friend_list',amigos);
 
 	socket.on('enter',function(data){
 
@@ -36,6 +108,18 @@ io.on('connection',function(socket){
 	});
 
     socket.on('chat',function(data){
+
+        _ios.sendEveryOne(io,'chat',data);
+
+    });
+
+    socket.on('friend_list',function(data){
+
+         _ios.sendPmMsg(io,socket.id,'friend_list',amigos);
+
+    });
+
+    socket.on('active_chats',function(data){
 
         _ios.sendEveryOne(io,'chat',data);
 
