@@ -1,4 +1,4 @@
-var socket = io.connect("http://127.0.0.1:4005");
+var socket = io.connect("http://192.168.0.103:4005");
 
 var msg = $('#input_msg').val();
 
